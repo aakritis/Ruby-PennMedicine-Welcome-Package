@@ -1,0 +1,10 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2>New Blood Count Record</h2>
+
+<%= render 'form' %>
+
+<%= link_to 'Back', blood_count_records_path %>

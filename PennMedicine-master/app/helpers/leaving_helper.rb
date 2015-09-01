@@ -1,0 +1,2 @@
+module LeavingHelper
+end

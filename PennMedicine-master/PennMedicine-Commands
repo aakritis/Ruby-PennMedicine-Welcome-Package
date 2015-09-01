@@ -1,0 +1,11 @@
+Start Application 
+rails s 
+
+Check In GIT
+git status
+git add .
+git commit -m "COMMENT"
+git stash
+git pull
+git push origin master
+

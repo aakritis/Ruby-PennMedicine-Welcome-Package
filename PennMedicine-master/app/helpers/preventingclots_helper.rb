@@ -1,0 +1,2 @@
+module PreventingclotsHelper
+end

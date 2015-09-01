@@ -1,0 +1,54 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+<%= form_for(@blood_count_record) do |f| %>
+  <% if @blood_count_record.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@blood_count_record.errors.count, "error") %> prohibited this blood_count_record from being saved:</h2>
+
+      <ul>
+      <% @blood_count_record.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date %><br>
+    <%= f.date_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :day %><br>
+    <%= f.text_field :day %>
+  </div>
+  <div class="field">
+    <%= f.label :wbc %><br>
+    <%= f.text_field :wbc %>
+  </div>
+  <div class="field">
+    <%= f.label :anc %><br>
+    <%= f.text_field :anc %>
+  </div>
+  <div class="field">
+    <%= f.label :hgb %><br>
+    <%= f.text_field :hgb %>
+  </div>
+  <div class="field">
+    <%= f.label :plt %><br>
+    <%= f.text_field :plt %>
+  </div>
+  <div class="field">
+    <%= f.label :transfusions %><br>
+    <%= f.text_field :transfusions %>
+  </div>
+  <div class="hidden">
+    <%= f.label :user_id %><br>
+    <%= f.text_field :user_id, :placeholder => "#{current_user.id}", :value => "#{current_user.id}"  %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

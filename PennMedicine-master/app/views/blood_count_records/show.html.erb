@@ -1,0 +1,49 @@
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @blood_count_record.date %>
+</p>
+
+<p>
+  <strong>Day[+/-]:</strong>
+  <%= @blood_count_record.day %>
+</p>
+
+<p>
+  <strong>Wbc[thousand]:</strong>
+  <%= @blood_count_record.wbc %>
+</p>
+
+<p>
+  <strong>Anc:</strong>
+  <%= @blood_count_record.anc %>
+</p>
+
+<p>
+  <strong>Hgb[gm/dl]:</strong>
+  <%= @blood_count_record.hgb %>
+</p>
+
+<p>
+  <strong>Plt:</strong>
+  <%= @blood_count_record.plt %>
+</p>
+
+<p>
+  <strong>Transfusions:</strong>
+  <%= @blood_count_record.transfusions %>
+</p>
+
+<p class="hidden">
+  <strong>UserId:</strong>
+  <%= @blood_count_record.user.id %>
+</p>
+
+<%= link_to 'Edit', edit_blood_count_record_path(@blood_count_record) %> |
+<%= link_to 'Back', blood_count_records_path %>

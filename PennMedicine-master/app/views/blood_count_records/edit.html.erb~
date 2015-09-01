@@ -1,0 +1,11 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2>Editing Blood Count Record</h2>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @blood_count_record %> |
+<%= link_to 'Back', blood_count_records_path %>
